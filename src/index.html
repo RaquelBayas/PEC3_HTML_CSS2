@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <!-- do not remove this line! -->
+        <title>UOC Boilerplate</title>
+    </head>
+    <body>
+        <include src="./views/header.html"></include>
+        <div class="m-10 rounded">
+            <div class="container-index pt-8">
+                <div class="md:w-1/2 bg-colorIndexBG text-center flex flex-col justify-center" >
+                    <h1 class="text-4xl mb-4">Club de Ajedrez ChessFun</h1>
+                    <p class="text-base mx-12 leading-10">
+                        ¿Te gustan los juegos de lógica y estrategia? ¿Disfrutas
+                        de los desafíos mentales y de poner a prueba tu
+                        capacidad de planificación y anticipación? Si la
+                        respuesta es sí, entonces el ajedrez es definitivamente
+                        lo tuyo.
+                    </p>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="./assets/images/chess_home.jpg" alt="" class="w-full h-auto rounded-lg">
+                </div>
+            </div>
+            <div class="container-index bg-colorIndexBG">
+                <div class="md:w-1/2">
+                    <img src="./assets/images/chessgame.jpg" alt="" class="w-full h-auto rounded-lg">
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="text-center flex flex-col justify-center mx-12">
+                        <h5 class="text-xl mb-4">
+                            En nuestro club podrás aprender y desarrollar las habilidades necesarias para jugar con amigos y en campeonatos profesionales
+                        </h5>
+                        <p class="text-base">
+                            Inscríbete y descubre el maravilloso mundo del ajedrez mientras te diviertes y haces amigos.
+                        </p>
+                        <button class="mx-12 px-6 py-3 text-white rounded-lg shadow-md  bg-colorButtons">
+                            Inscríbete
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <include src="./views/footer.html"></include>
+        <script type="module" src="./assets/scripts/main.js"></script>
+        <!-- do not remove this line! -->
+    </body>
 </html>
