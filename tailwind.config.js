@@ -11,7 +11,8 @@ module.exports = {
       'colorIcons': '#0d6efd',
     },
     fontFamily: {
-      'roboto': ['Roboto', 'sans-serif']
+      'roboto': ['Roboto', 'sans-serif'],
+      'montserrat': ['Montserrat', 'sans-serif'],
     }
   },
   plugins: [],

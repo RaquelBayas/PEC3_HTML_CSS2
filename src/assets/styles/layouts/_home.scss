@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: $font-family-Montserrat;
+  font-family: montserrat;
 }
 
 body {
@@ -8,6 +8,12 @@ body {
   height: 100%;
   padding: 0px;
   margin: 0px;
+}
+
+.flexColCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .container-index {
